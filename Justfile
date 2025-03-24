@@ -39,6 +39,7 @@ fmt:
 # Add all changes to the git repository
 [group('git')]
 update-git message:
+  just fmt
   git add .
   git commit -m "{{message}}"
   git push
