@@ -1,7 +1,9 @@
-{ pkgs, lib, ... }:
-
 {
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  pkgs,
+  lib,
+  ...
+}: {
+  nix.settings.experimental-features = ["nix-command" "flakes"];
   nix.optimise.automatic = true;
   nixpkgs.config.allowUnfree = true;
 

@@ -1,4 +1,8 @@
-{ config, pkgs, ... }: {
+{
+  config,
+  pkgs,
+  ...
+}: {
   home.file = {
     ".p10k.zsh".source = ~/dotfiles/.p10k.zsh;
   };
@@ -36,7 +40,7 @@
     oh-my-zsh = {
       enable = true;
       theme = "robbyrussell";
-      plugins = [ "git" ];
+      plugins = ["git"];
     };
 
     plugins = [

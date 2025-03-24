@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{pkgs, ...}: {
   system = {
     stateVersion = 5;
     # activationScripts are executed every time you boot the system or run `nixos-rebuild` / `darwin-rebuild`.
@@ -60,7 +60,7 @@
   security.pam.enableSudoTouchIdAuth = true;
 
   programs.zsh.enable = true;
-  environment.shells = [ pkgs.zsh ];
+  environment.shells = [pkgs.zsh];
 
   time.timeZone = "Europe/Warsaw";
 }
