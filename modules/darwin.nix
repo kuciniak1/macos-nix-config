@@ -51,8 +51,13 @@
 
       loginwindow = {
         GuestEnabled = false;
-        SHOWFULLNAME = true;
-        ShutDownDisabled = true;
+        SHOWFULLNAME = false;
+
+        PowerOffDisabledWhileLoggedIn = true;
+
+        RestartDisabledWhileLoggedIn = true;
+        ShutDownDisabledWhileLoggedIn = true;
+        SleepDisabled = true;
       };
     };
   };

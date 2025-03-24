@@ -17,6 +17,7 @@
 
     ### Utils
     bat
+    git-crypt
     glow
     jq
     ripgrep
