@@ -1,4 +1,4 @@
-{config, ...}: {
+{...}: {
   environment.variables.HOMEBREW_NO_ANALYTICS = "1";
 
   homebrew = {
@@ -10,14 +10,18 @@
     };
 
     brews = [
+      "ffmpeg"
+      "go"
+      "kubernetes-cli"
+      "minikube"
       "pandoc"
+      "podman"
       "tmux"
       "wget"
     ];
 
     casks = [
       "alacritty"
-      "alfred"
       "appcleaner"
       "arc"
       "bitwarden"
@@ -33,15 +37,19 @@
       "microsoft-auto-update"
       "microsoft-teams"
       "minecraft"
-      "mullvadvpn"
+      "mullvad-vpn"
+      "obsidian"
       "qbittorrent"
-      "rectangle"
+      "podman-desktop"
+      "raycast"
       "selfcontrol"
       "steam"
       "tempbox"
       "the-unarchiver"
       "tomatobar"
       "vlc"
+      "yaak"
+      "zed"
       "zotero"
     ];
 
