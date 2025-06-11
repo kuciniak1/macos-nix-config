@@ -19,7 +19,7 @@
         _FXSortFoldersFirst = true;
         AppleShowAllExtensions = true;
         FXPreferredViewStyle = "clmv";
-        FXRemoveOldTrashItems = true;
+        FXRemoveOldTrashItems = false;
         FXEnableExtensionChangeWarning = false;
 
         ShowHardDrivesOnDesktop = false;
@@ -59,6 +59,11 @@
         ShutDownDisabledWhileLoggedIn = true;
         SleepDisabled = true;
       };
+    };
+
+    keyboard = {
+      enableKeyMapping = true;
+      remapCapsLockToEscape = true;
     };
   };
 
