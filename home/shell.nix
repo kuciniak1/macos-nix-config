@@ -98,7 +98,7 @@
   };
 
   home.shellAliases = {
-    python = "uvx python";
+    ipython = "uvx python";
     htop = "btop";
     cat = "bat";
     cd = "z";
@@ -107,5 +107,6 @@
     l = "eza --color=auto";
     ls = "eza --color=auto";
     activate = "source .venv/bin/activate";
+    clip = "pbcopy";
   };
 }
