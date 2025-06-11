@@ -10,16 +10,13 @@
     sops
     terragrunt
 
-    ### Containers
-    podman
-    podman-compose
-    podman-desktop
-
     ### Utils
     bat
     git-crypt
     glow
     jq
+    nil
+    nixd
     ripgrep
     tldr
     uv
