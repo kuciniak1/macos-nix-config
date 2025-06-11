@@ -4,7 +4,7 @@
     settings = {
       env.TERM = "xterm-256color";
       general.import = [
-        "${pkgs.alacritty-theme}/campbell.toml"
+        "${pkgs.alacritty-theme}/ayu_dark.toml"
       ];
       font = {
         size = 14;
