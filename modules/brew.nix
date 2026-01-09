@@ -9,19 +9,26 @@
       upgrade = true;
     };
 
+    taps = [
+      "tw93/tap"
+    ];
+
     brews = [
       "ffmpeg"
       "go"
       "kubernetes-cli"
       "minikube"
+      "mole"
       "pandoc"
       "podman"
+      "podman-compose"
+      "rclone"
       "tmux"
       "wget"
+      "yt-dlp"
     ];
 
     casks = [
-      "alacritty"
       "appcleaner"
       "arc"
       "bitwarden"
@@ -35,9 +42,9 @@
       "jordanbaird-ice"
       "linearmouse"
       "microsoft-auto-update"
+      "microsoft-excel"
       "microsoft-teams"
       "minecraft"
-      "mullvad-vpn"
       "obsidian"
       "qbittorrent"
       "podman-desktop"

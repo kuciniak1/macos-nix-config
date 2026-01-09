@@ -7,8 +7,6 @@
   nix.optimise.automatic = true;
   nixpkgs.config.allowUnfree = true;
 
-  services.nix-daemon.enable = true;
-
   nix.package = pkgs.nix;
 
   nix.gc = {

@@ -3,15 +3,12 @@
   pkgs,
   ...
 }: {
-  home.file = {
-    ".p10k.zsh".source = ~/dotfiles/.p10k.zsh;
-  };
+  home.file.".p10k.zsh".source = ./dotfiles/.p10k.zsh;
 
   programs.zsh = {
     enable = true;
     enableCompletion = true;
     autosuggestion.enable = true;
-
     history = {
       path = "$HOME/.zsh_history";
       size = 10000000;
@@ -39,7 +36,7 @@
 
     oh-my-zsh = {
       enable = true;
-      theme = "robbyrussell";
+      theme = "";
       plugins = ["git"];
     };
 
@@ -61,13 +58,10 @@
       }
     ];
 
-    initExtraFirst = ''
+    initContent = ''
       if [[ -r "''${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-''${(%):-%n}.zsh" ]]; then
         source "''${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-''${(%):-%n}.zsh"
       fi
-    '';
-
-    initExtra = ''
       # zsh configs
       source ~/.p10k.zsh
 
@@ -85,12 +79,6 @@
 
       # Podman completion
       [[ $commands[podman] ]] && source <(podman completion zsh)
-
-      # Bash completion
-      autoload -U +X bashcompinit && bashcompinit
-
-      # Terragrunt completion
-      complete -o nospace -C ${pkgs.terragrunt}/bin/terragrunt terragrunt
 
       # SOPS/AGE
       export SOPS_AGE_KEY_FILE=$HOME/.sops/sops.key

@@ -49,8 +49,10 @@
 
     git = {
       enable = true;
-      userName = "kuciniak1";
-      userEmail = "danielkucinski@proton.me";
+      settings = {
+        user.name = "kuciniak1";
+        user.email = "danielkucinski@proton.me";
+      };
     };
 
     zoxide = {
